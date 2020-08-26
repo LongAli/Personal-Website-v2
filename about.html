@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang= "en">
+  <head>
+    <meta charset="utf-8">
+    <meta name ="viewport" content = "width=device-width, initial-scale=1.0">
+    <title>Yingxi_Ali | About </title>
+    <link href="stylev3.css" rel="stylesheet" type="text/css" >
+    <link rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Poppins">
+    <link rel="stylesheet" href = "https://fonts.googleapis.com/css?family=Patrick+Hand";>
+  </head>
+
+  <header>
+    <div id = "grid">
+      <div class ="logo">
+       <a href="web-v3.html"> <img src="logo.jpg" alt="logo" width=50%;></a>
+      </div>
+      <div class = "nav">
+        <div class = "menu">
+          <a href=web-v3.html#work> <h4>Work</h4> </a>
+          <a href="illustration.html" ><h4> For fun</h4></a>
+          <a href= "about.html"> <h4>About</h4></a>
+        </div>
+       </div>
+    </div>
+  </header>
+
+
+
+  <body>
+
+    <div id="grid">
+      <div class = "card1">
+        <br>
+        <img src="pic.jpg" alt="image" width="90%">
+        <!--footer-->
+        <br><br>  <br><br>
+      <div style = "text-align:center;">
+                <p> &nbsp;&nbsp;Find me here!</p><br>
+
+             <a href="mailto:yil761@ucsd.edu" >
+               <img src="gmail.svg" alt="email" width = 10%;></a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+             <a target="_blank" rel="noopener noreferrer" href="https://www.linkedin.com/in/yingxi-long/" >
+               <img src="linkedin.svg" alt="linkedin" width = 10%;></a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+             <a target="_blank" rel="noopener noreferrer" href="https://www.instagram.com/alil_notalone/" >
+               <img src="ig.svg" alt="instagram" width = 10%;></a>
+           </div>
+            </div>
+
+
+      <div class = "card2">
+        <h2>Me</h2>
+        <p>Hi! I'm a senior majoring in Cognitive Science specialized
+        in Design and Interaction at UCSD. I love painting & cooking and I am a
+        huge fan of Golden Retriver and pet every Golden Retriver as I can
+        <span style="font-size:120%; color:#ffca2b;">&hearts;  &hearts;  &hearts;</span>
+        Recently, I've been exploring Figma & Animate & Illustrator and love
+        to hear all the amazing tricks about them!!</p>
+<br>
+      <h2>My journey to Design</h2>
+      <p>I got into UCSD as a biology major student and, for the previous two
+         years, I had been switching between majors under the biology department,
+         struggling to settle on any of them.
+         After much searching online and asking advisors and friends,
+         I decided to take an online UIUX course to try it out.
+         <italic>The opportunity of digging into the real problems and exploring
+         various solutions through itering user experience research has
+         been an inspiring and fascinating experience for me.</italic> Moreover,
+         with over 10 years of learning sketching and 2 years of biology
+         background, I also developed a huge interest in UI design.
+         I enjoyed the appealing visual elements as well as the underlying
+         physiological and psychological effects of how we perceive the world.
+         All those factors have prepared me as a more <strong style='color: #1B85C1'>thoughtful,
+           well rounded and creative designer.</strong>
+          And that is how I started my journey into Design. </p>
+
+    </div>
+
+
+
+        <div class = "card1">
+
+          <p>Designed & Coded with ❤ by Ali</p>
+          <br>
+        </div>
+      </div>
+
+
+      <script>
+          const btn = document.querySelector(".btn-toggle");
+          const prefersDarkScheme = window.matchMedia("(prefers-color-scheme: dark)");
+
+          const currentTheme = localStorage.getItem("theme");
+          if (currentTheme == "dark") {
+          document.body.classList.toggle("dark-theme");
+          } else if (currentTheme == "light") {
+          document.body.classList.toggle("light-theme");
+          }
+
+          btn.addEventListener("click", function () {
+          if (prefersDarkScheme.matches) {
+            document.body.classList.toggle("light-theme");
+            var theme = document.body.classList.contains("light-theme")
+              ? "light"
+              : "dark";
+          } else {
+            document.body.classList.toggle("dark-theme");
+            var theme = document.body.classList.contains("dark-theme")
+              ? "dark"
+              : "light";
+          }
+          localStorage.setItem("theme", theme);
+          });
+      </script>
+
+  </body>
+</html>

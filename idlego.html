@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang= "en">
+  <head>
+    <meta charset="utf-8">
+    <meta name ="viewport" content = "width=device-width, initial-scale=1.0">
+    <title>Idlego 🦊</title>
+    <link href="stylev3.css" rel="stylesheet" type="text/css" >
+    <link rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Poppins">
+    <link rel="stylesheet" href = "https://fonts.googleapis.com/css?family=Patrick+Hand";>
+  </head>
+
+  <header>
+    <div id = "grid">
+      <div class ="logo">
+       <a href="web-v3.html"> <img src="logo.jpg" alt="logo" width=50%;></a>
+      </div>
+      <div class = "nav">
+        <div class = "menu">
+          <a href=#work> <h4>Work</h4> </a>
+          <a href="illustration.html" ><h4> For fun</h4></a>
+          <a href= "about.html"> <h4>About</h4></a>
+        </div>
+       </div>
+    </div>
+  </header>
+
+  <body>
+
+    <div style = "text-align:center;">
+      <p>The case study is under construction! Please come back later</p>
+      <br>
+    <img src="giphy.gif" alt="spongebob" width = 80%;>
+  </div>
+
+
+
+
+    <!--footer-->
+    <br><br>
+        <div id="grid">
+          <div id = "content">
+            <p>
+              I'm actively looking for internships/part-time for the next academic year!
+    Let's chat!</p>
+
+          </div>
+          <div class = "card1">
+           <p>Designed & Coded with ❤ by Ali</p>
+          </div>
+
+             <div class = "card2">
+               <div class = "nav">
+                 <div class = "menu">
+                   <a href="mailto:yil761@ucsd.edu" >
+                     <img src="gmail.svg" alt="email" width = 28%;></a>
+                   <a target="_blank" rel="noopener noreferrer" href="https://www.linkedin.com/in/yingxi-long/" >
+                     <img src="linkedin.svg" alt="linkedin" width = 30%;></a>
+                   <a target="_blank" rel="noopener noreferrer" href="https://www.instagram.com/alil_notalone/" >
+                     <img src="ig.svg" alt="instagram" width = 30%;></a>
+                 </div>
+                </div>
+        </div>
+    <br>
+
+
+
+    <script>
+        const btn = document.querySelector(".btn-toggle");
+        const prefersDarkScheme = window.matchMedia("(prefers-color-scheme: dark)");
+
+        const currentTheme = localStorage.getItem("theme");
+        if (currentTheme == "dark") {
+        document.body.classList.toggle("dark-theme");
+        } else if (currentTheme == "light") {
+        document.body.classList.toggle("light-theme");
+        }
+
+        btn.addEventListener("click", function () {
+        if (prefersDarkScheme.matches) {
+          document.body.classList.toggle("light-theme");
+          var theme = document.body.classList.contains("light-theme")
+            ? "light"
+            : "dark";
+        } else {
+          document.body.classList.toggle("dark-theme");
+          var theme = document.body.classList.contains("dark-theme")
+            ? "dark"
+            : "light";
+        }
+        localStorage.setItem("theme", theme);
+        });
+    </script>
+
+
+
+
+  </body>
+  </html>
